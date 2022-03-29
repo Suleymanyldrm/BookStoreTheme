@@ -1,0 +1,80 @@
+.shorted-area {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid 88888866;
+    height: 60px;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+.filter-area {
+    background-color: #f1f3ef;
+}
+
+.filter-section {
+    max-height: 165px;
+    overflow-y: auto;
+    margin-bottom: 0.7rem;
+}
+
+.price-filter-label {
+    font-size: 12px;
+}
+
+.price-filter-input {
+    max-width: 95px;
+}
+
+.search-btn {
+    height: 40px;
+    width: 200px;
+    margin-top: auto;
+    background-color: white;
+    /* background-color: #dc3545; */
+    color: #dc3545 !important;
+    font-weight: 600 !important;
+    font-size: medium;
+    border-color: #dc3545;
+}
+
+.search-btn:hover {
+    background-color: #ffcc00;
+    color: black !important;
+}
+
+.search-title {
+    font-family: 'hinted-subset-AvenirNextLTPro-Demi';
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.search-content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.result-title {
+    font-family: 'hinted-subset-AvenirNextLTPro-Demi';
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sort-list {
+    font-family: 'hinted-subset-AvenirNextLTPro-Demi';
+    font-weight: normal;
+    border: 1px solid black;
+    color: black;
+    padding: 0 8px;
+    display: inline-block;
+    overflow: hidden;
+    outline: 0;
+    text-align: left!important;
+    width: 105px;
+    height: 35px;
+}
+
+.dropdown-toggle::after {
+    color: #f5a623;
+    /*sırala kutusunun içindeki icon rengi*/
+    margin-left: 30px;
+}

@@ -1,0 +1,634 @@
+/*İndex.html*/
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.nav-link {
+    color: #a19c9c !important;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: #78e7a9 !important;
+}
+
+.c-dark {
+    color: #000 !important;
+}
+
+.mb-13 {
+    height: 25px;
+    width: 1.5px;
+    background-color: gray;
+    opacity: 80%;
+    border-radius: 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.basket-icon {
+    color: black;
+}
+
+.index-search {
+    background-color: #ff9100;
+}
+
+.slider-img {
+    height: 400px;
+}
+
+.carousel-caption {
+    /*bootstrapin hazır olan carousel-caption clasını ezdimmmm*/
+    position: absolute;
+    bottom: 8rem;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    right: 10%;
+}
+
+.c-gray {
+    color: #000000;
+}
+
+.x {
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.book-img {
+    max-height: 200px;
+    max-width: 150px;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 3px 5px 15px #888888;
+}
+
+.like-book {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.liked {
+    color: red;
+}
+
+.unliked {
+    color: transparent;
+}
+
+.card {
+    border: none !important;
+    /*kitap resimlerinin etrafındaki gri çizgileri ezdik*/
+}
+
+.card-title {
+    margin-top: 65px;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.book-list-card-bg {
+    background-color: #fcfcfd;
+}
+
+.load-more {
+    background-color: #00d664;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.follow-margin {
+    margin-top: 150px;
+}
+
+
+/*facebook*/
+
+.social-media-container-f {
+    border-top: 3px solid #4080ff;
+    box-shadow: 0px 5px 10px #888888;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*kutunun üstündeki çizgi ve rengi*/
+}
+
+.social-media-button-f {
+    background-color: #4080ff;
+    color: white;
+    margin-top: 15px;
+}
+
+.social-media-button-f:hover {
+    color: black;
+    background-color: #ffac40;
+}
+
+
+/*instagram*/
+
+.social-media-container-i {
+    border-top: 3px solid #ff4d40;
+    box-shadow: 0px 5px 10px #888888;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button-i {
+    background-color: #ff4d40;
+    color: white;
+    margin-top: 15px;
+}
+
+.social-media-button-i:hover {
+    color: black;
+    background-color: #ffac40;
+}
+
+
+/*twitter*/
+
+.social-media-container-t {
+    border-top: 3px solid rgb(0, 238, 255);
+    box-shadow: 0px 5px 10px #888888;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-button-t {
+    background-color: rgb(0, 238, 255);
+    color: white;
+    margin-top: 15px;
+}
+
+.social-media-button-t:hover {
+    color: black;
+    background-color: #ffac40;
+}
+
+.newsletter-email {
+    border: none;
+    box-shadow: 0px 5px 10px #88888866;
+    border-radius: 20px;
+    padding: 5px 10px 5px 20px
+}
+
+.subscribe-btn {
+    background-color: #00d664;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subscribe-btn:focus {
+    outline: none;
+}
+
+.subscribe-btn::placeholder {
+    color: #888888;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.footer-top {
+    margin-top: 60px;
+}
+
+.footer-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-subtitle {
+    color: black !important;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/*Detail.html*/
+
+.scope {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 1300px;
+    transition: .2s all ease;
+    background-attachment: fixed;
+}
+
+.prev {
+    display: flex;
+    position: absolute;
+    right: 95%;
+    font-size: 25px;
+    bottom: 48%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    transition: .2s ease-out all;
+}
+
+.slider-carousel {
+    display: flex;
+    position: relative;
+    left: 0;
+    height: 500px;
+    transition: transform .350ms ease-in;
+}
+
+.inPicture {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    padding: 0 15px 8px 15px;
+    width: 35vw;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0.7;
+    bottom: 8%;
+    margin-left: 4.5%;
+    color: white;
+}
+
+.inPicture span {
+    font-size: 15px;
+}
+
+.next {
+    display: flex;
+    position: absolute;
+    left: 95%;
+    bottom: 48%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    transition: .2s ease-out all;
+}
+
+.dots-indicators {
+    display: flex;
+    position: absolute;
+    bottom: -2%;
+}
+
+.dot {
+    display: flex;
+    border-radius: 50px;
+    padding: 2px;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.book-name {
+    margin-top: 15px;
+    margin-right: 10%;
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+
+.book-summery {
+    font-size: 15px;
+}
+
+.scope-basket {
+    width: 17% !important;
+}
+
+.basket {
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 10px;
+}
+
+.item-count {
+    width: 45px;
+}
+
+.a-color {
+    color: #007185;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+.stok-color {
+    color: #007600;
+}
+
+.add-basket {
+    background-color: #ffcc00;
+    border: none;
+    width: 150px;
+}
+
+.add-basket:hover {
+    background-color: #19b426;
+}
+
+.buy-basket {
+    background-color: #ff9100;
+    border: none;
+    width: 150px;
+}
+
+.buy-basket:hover {
+    background-color: #19b426;
+}
+
+.book-img-detail {
+    max-height: 200px;
+    max-width: 180px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2rem;
+    box-shadow: 3px 5px 15px #888888;
+}
+
+.hover:hover {
+    color: rgba(255, 255, 0, 0.76);
+}
+
+.book-img-detail:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.4);
+}
+
+#stars>i:before {
+    color: #c7c5c5;
+    cursor: pointer;
+}
+
+#stars:hover>i:before {
+    color: rgb(255, 136, 0);
+}
+
+#stars>i:hover~i:before {
+    color: #c7c5c5;
+}
+
+.h3-detail {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.h3-detail::before {
+    content: "";
+    background: url(https://cdn.bkmkitap.com/Data/EditorFiles/title_icon-left.svg) no-repeat left center;
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+}
+
+.h3-detail::after {
+    content: "";
+    background: url(https://cdn.bkmkitap.com/Data/EditorFiles/title_icon-right.svg) no-repeat right center;
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+}
+
+.scope {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: 1300px;
+    overflow: hidden;
+    transition: .2s all ease;
+}
+
+.prev {
+    display: flex;
+    position: absolute;
+    right: 95%;
+    font-size: 25px;
+    bottom: 48%;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    transition: .2s ease-out all;
+}
+
+.slider-carousel {
+    display: flex;
+    position: relative;
+    left: 0;
+    height: 500px;
+    transition: transform .350ms ease-in;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 340px;
+    padding: 20px;
+}
+
+.next {
+    display: flex;
+    position: absolute;
+    left: 95%;
+    bottom: 48%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50px;
+    transition: .2s ease-out all;
+}
+
+.benzer-book-bg {
+    background-color: #f8f8f8;
+}
+
+.benzer-book-bg:hover {
+    background-color: white;
+    box-shadow: 0px 5px 10px #ebe2e2;
+    cursor: pointer;
+}
+
+.similar-book-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title-benzer {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.amount-button {
+    width: 120px;
+}
+
+.text-title {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    color: #e4002b;
+    font-family: "hinted-subset-AvenirNextLTPro-Cn";
+    font-weight: 900;
+}
+
+.nav-link:hover {
+    background-color: white;
+    box-shadow: 0px 5px 10px #ebe2e2;
+}
+
+#ideasoft {
+    background-color: #eee;
+    padding: 0.6rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: nunito, sans-serif;
+}
+
+#ideasoft a:first-child {
+    color: #060;
+}
+
+#ideasoft a:last-child {
+    color: rgb(53, 119, 184);
+}
+
+
+/*Basket.html*/
+
+.text-type {
+    font-family: "Sofia Pro Display", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.progress {
+    display: flex;
+    height: 7px;
+    padding: 0;
+    position: relative;
+    background: #dadada;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    line-height: 3;
+    color: #fff;
+    background: #ee9e37;
+    width: 25%;
+}
+
+.type-product {
+    font-family: "Sofia Pro Display", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.basket-slider-img {
+    height: 300px;
+}
+
+.basket-p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+.basket-kupon {
+    border: 1px solid rgb(199, 196, 196);
+}
+
+.basket-uygula {
+    background-color: red;
+    border: none;
+}
+
+.basket-pay {
+    background-color: red;
+    width: 150px;
+}
+
+.basket-update {
+    color: red;
+    border: 1px solid red;
+    width: 150px;
+}
+
+.basket-baskethtml {
+    border: 2px solid red;
+}
+
+.fiyat-kutu {
+    border: 1px solid rgb(199, 196, 196);
+}
+
+.v {
+    min-height: 75vh
+}
